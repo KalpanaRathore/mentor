@@ -1,0 +1,537 @@
+body {
+  margin: 0;
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ .my_head{
+  height: 80vh;
+  width: 100%;
+  background: url("/public/gallery/gurukul.jpg") top center;
+  background-Size: cover;
+  /* background-Repeat: no-repeat; */
+  position:relative;
+ }
+ 
+ .my_nav {
+  .navbar-mobile {
+    position: fixed; 
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(32, 38, 34, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+  }
+} 
+ .mynav_item{
+  color: green;
+  font-weight: bolder; 
+  margin-left: 60%;
+  margin-right: 10%;
+ }
+
+ /* -----------home section--------- */
+ .hero{
+  padding-left: 5%;
+  padding-top: 15%;
+ }
+ .hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero h2 {
+  color: #eee;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+ .btn_start {
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 10px 35px;
+  border-radius: 50px;
+  opacity: 0.5;
+  margin-top: 30px;
+  border: 2px solid #faf8f8;
+  background: #eee;
+  
+  color: #333131;
+}
+
+.btn_start2{
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  border-radius: 50px;
+  margin-top: 10px;
+  border: 2px solid #faf8f8;
+  background: #eee;
+  color: #333131;
+}
+.btn_start:hover {
+  background: #5fcf80;
+  border: 2px solid #5fcf80;
+}
+.btn_start2:hover {
+  background: #7cce94;
+  border: 2px solid #5b685e;
+}
+
+.col_4{
+  background-color: #5fcf80;
+  border-radius: 5px;
+  color: white;
+  padding: 8%;
+}
+
+.round_box{
+  border: 2px solid rgb(236, 236, 245);
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  background-color: rgb(211, 211, 223);
+  margin: auto;
+  position: relative;
+  z-index: 1;
+ 
+ }
+
+ @media only screen and (max-width: 1024px) and (min-width: 200px){
+  .imgSet{
+    width: 100%;
+    margin: 0;
+  }
+  .my_head{
+    height: 85vh;
+    background: url("/public/gallery/gurukul.jpg");
+    background-size: cover;
+    background-Repeat: no-repeat;
+    position:relative;
+    /* display: none; */
+   }
+   .hero{
+    padding-left: 5%;
+    padding-top: 20%;
+    /* display: none; */
+   }
+ }
+
+ 
+ /* ------------------course section------- */
+
+
+ @media only screen and (max-width: 300px ) and (min-width: 200px){
+  .disNone{
+    display: none;
+  }
+  .navbar-toggler-icon {
+    vertical-align: bottom;
+   }
+ }
+
+ /* ----------------trainers section--------- */
+ .myCard_title{
+  text-align:center; 
+  letter-spacing:4px;
+ }
+
+ .myCard_text{
+  margin-left: 5%;
+  margin-right: 10px;
+ }
+ 
+ .my_anchor a{
+  text-decoration: none;
+ }
+ 
+
+ @media only screen and (max-width: 750px) and  (min-width: 200px){
+  .my_anchor{
+    display: none;
+  }
+ }
+ /* @media only screen and (max-width: 1024px) and  (min-width: 750px){
+  .my_anchor i{
+    margin-left: 5%;
+  }
+ } */
+ /* ----------------about section---------- */
+ .utility_class{
+  text-align: center;
+  color: rgb(71, 70, 70);
+  padding-top: 2rem;
+  /* line-height: 30px; */
+ }
+
+.util_class{
+  text-align: center;
+  color: white;
+}
+
+ @media only screen and (max-width: 1024px) and (min-width: 700px){
+ .my_crd{
+  width: 100% !important;
+  margin: 0.5rem !important;
+ }
+
+ .utility_class{
+  font-size: 35px;
+  text-align: center;
+ }
+ .card-p-txt{
+  font-size: 30px;
+ }
+
+
+
+/* div {
+  display: block !important;
+} */
+}
+ 
+/* -------------footer---------- */
+ .my_row{
+  height: 100px;
+  background-color: bisque;
+}
+.heading{
+  color: rgb(255, 187, 0);
+  margin-bottom: 5%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.list{
+  list-style-type: none;
+  margin-bottom: 10%;
+  padding-bottom: 5%;
+
+}
+
+/* img{
+  height: 80%;
+  width: 100%;
+} */
+
+.my_inputSearch{
+  margin-top: 8%; 
+  margin-bottom: 2%; 
+  margin-left: 20%; 
+  width: 50%; 
+  height: 35px; 
+  border-radius: 8px; 
+  border-width: 0px; 
+  padding-left: 2.5%; 
+  outline: none;
+  cursor: pointer;
+  
+}
+
+.my_con{
+  position: relative; 
+  z-index: 1; 
+  margin-top: -5%;
+}
+.footer{
+  font-size: 20px; 
+  margin-bottom: 2%; 
+  margin-left: 10%; 
+  font-weight: bolder; 
+  color: white;
+}
+.arrow{
+  border-radius: 50px; 
+  width: 45px; 
+  height: 50px; 
+  float: right; 
+  background-color: rgb(255, 187, 0); 
+  color: white; 
+  font-size: 35px; 
+  font-weight: bolder; 
+  border-width: 0px; 
+  margin-right: 10%;
+}
+
+@media only screen and  (max-width: 600px)  {
+ .heading{
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: 25px;
+  text-align: center;
+ }
+  .list{
+     margin-bottom: 5px;
+     padding-bottom: 5px;
+  }
+  .my_con{
+     margin-top: -20%;
+}
+.my_inputSearch{
+  margin-left: 13%;
+  margin-right: 4%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  width: 100%;
+
+}
+.footer{
+  margin-top: 8%;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(255, 187, 0);
+}
+}
+@media only screen and (min-width: 600px) and (max-width:850px){
+  
+  .my_con{
+      margin-top: -15%;
+      height: 120px;
+  } 
+  .heading{
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: 25px;
+  text-align: center;
+ }
+
+  .list{
+      margin-bottom: 5px;
+     padding-bottom: 5px;
+     display: inline;
+     word-spacing: 15px;
+  }
+  .my_inputSearch{
+      margin-top: 1%;
+      
+  }
+ 
+  .footer {
+    display: none;
+  }
+  .arrow{
+      display: none;
+     }
+ 
+} 
+
+/* ------------------login------------- */
+
+.container_log{
+  display: flex;
+  flex-direction:column;
+  margin: auto;
+  margin-top: 100px;
+  width: 600px;
+  background: #fff;
+  padding-bottom: 30px;
+}
+
+.header_log{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 30px;
+}
+.text_log{
+  color: #3c009d;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.underline_log{
+  width: 61px;
+  height: 6px;
+  background: #3c009d;
+  border-radius: 9px;
+}
+
+.inputs_log{
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input_log{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 480px;
+  height: 80px;
+  background: #eaeaea;
+  border-radius: 6px;
+}
+
+.input_log img{
+  margin: 0px 30px;
+}
+
+.input_log input{
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 19px;
+}
+
+.forgot-password{
+  padding-left: 62px;
+  margin-top: 27px;
+  color: #797979;
+  font-size: 18px;
+}
+
+.forgot-password span{
+  color: #4c00b4;
+  cursor: pointer;
+}
+
+.submit-container{
+  display: flex;
+  gap: 30px;
+  margin: 60px auto;
+}
+
+.submit_log{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 59px;
+  color: #fff;
+  background: #4c00b4;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.gray{
+  background-color: #EAEAEA;
+  color: #676767;
+}
+/* -----------------signUp------------ */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 1rem 0.5rem;
+  background-color: rgb(91, 92, 94);
+}
+
+.sect {
+  margin-top: 4rem;
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: rgba(158, 156, 156, 0.4);
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+.aSign, 
+.aSign:visited {
+    color: #fff;
+}
+
+.inputSign[type="text"],
+.inputSign[type="password"],
+.buttonSign,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.labelSign,
+.buttonSign {
+  margin-top: 1rem;
+}
+
+.buttonSign {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
