@@ -12,6 +12,7 @@ const Login = () => {
     const [user, setUser] = useState('');
     const [pwd, setPwd] = useState('');
     const [errMsg, setErrMsg] = useState('');
+    const [error, setError] = useState('');
     const [success, setSuccess] = useState(false);
 
     useEffect(() => {
@@ -26,6 +27,28 @@ const Login = () => {
         e.preventDefault();
 
     }
+
+    const handleLogin = async () => {
+        try {
+          const response = await axios.get('http://localhost:3004/contact', {
+            params: {
+              user,
+              pwd,
+            },
+          });
+    
+          if (response.data.length > 0) {
+            setSuccess(true) 
+          } else {
+            console.error('Invalid email or password');
+            alert("Invalid Username or Password")
+          }
+        } catch (error) {
+          console.error('Login failed:', error.message);
+        alert("Login Failed")
+        }
+      };
+    
     return (
         <>
         <div className="App">
