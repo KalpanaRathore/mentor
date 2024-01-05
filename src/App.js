@@ -14,11 +14,7 @@ import Home from './components/Home.js';
 import About from './components/About.js';
 import SignUpForm from './components/SignUpForm.js';
 import LoginSignUp from './components/loginsignup/LoginSignUp.js';
-
-
-
-
-
+import Material from './components/Material.js';
 
 function App() {
 
@@ -34,6 +30,7 @@ function App() {
             <Route path='/Trainers' element={<Trainers/>}/>
             <Route path='/LoginSignUp' element={<LoginSignUp/>}/>
             <Route path='/SignUpForm' element={<SignUpForm/>}/>
+            <Route path='/Material' element={<Material/>}/>
             <Route path='/*' element={<PageNotFound/>}/>
         </Routes>
       <Footer />
